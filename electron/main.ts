@@ -1,7 +1,5 @@
-/** electron/main.ts */
-
 import { app, BrowserWindow } from 'electron';
-import { join } from 'path';
+import path from 'node:path';
 
 const createWindow = () => {
 	const win = new BrowserWindow({
@@ -14,9 +12,9 @@ const createWindow = () => {
 	});
 
 	if (process.env.VITE_DEV_SERVER_URL) {
-		win.loadURL(process.env.VITE_DEV_SERVER_URL);
+		win.loadURL(process.env.VITE_DEV_SERVER_URL); // 使用vite开发服务的url路径访问应用
 	} else {
-		win.loadFile(join(__dirname, 'index.html'));
+		win.loadFile(path.join(__dirname, '../dist/index.html')); // 打包后使用文件路径访问应用
 	}
 };
 

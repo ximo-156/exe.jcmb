@@ -22,5 +22,6 @@ function A佳佳(){
     font-size: 60px;
     text-align: center;
     background: rgba(123, 246, 9, .5);
+    cursor: pointer;
 }
 </style>
