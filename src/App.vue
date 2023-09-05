@@ -1,10 +1,9 @@
 <script setup lang="ts">
+import Headers from "./components/header.vue";
 </script>
 
 <template>
-  <router-link to="/home" class="router-link"> to home</router-link>
-  <router-link to="/about" class="router-link">to about</router-link>
-
+  <Headers />
   <router-view></router-view>
 </template>
 

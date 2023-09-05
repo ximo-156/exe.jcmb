@@ -5,9 +5,9 @@
   "author":"electron_vue3",
   "main": "dist-electron/main.js",
   "scripts": {
-    "dev": "chcp 65001 && vite",
+    "dev": "vite",
     "preview": "vite preview",
-    "electron:dev": "chcp 65001 && vite --config vite.config.electron.ts",
+    "electron:dev": "vite --config vite.config.electron.ts",
     "build": "vue-tsc --noEmit && vite build",
     "electron:build": "vue-tsc && vite build --config vite.config.electron.ts && electron-builder"
   },
