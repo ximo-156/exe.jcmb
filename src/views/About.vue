@@ -1,7 +1,6 @@
 <script setup lang="ts">
+import Headers from "../components/header.vue";
 import {ref} from "vue"
-  
-
 let a = ref(0)
 
 function A佳佳(){
@@ -9,6 +8,7 @@ function A佳佳(){
 }
 </script>
 <template>
+  <Headers />
     <div @click="A佳佳" class="yige">
         {{a}}
     </div>
