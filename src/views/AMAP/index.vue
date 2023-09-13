@@ -6,7 +6,6 @@
     <div
       id="container"
       class="index-map"
-      style="height: 50vh; width: 100%"
     ></div>
   </div>
 </template>
@@ -43,7 +42,7 @@ onMounted(() => {
 <style scoped lang='less'>
 .index {
   .index-map {
-    height: 100%;
+    height: calc(100vh - 40px);
     width: 100%;
   }
 }
