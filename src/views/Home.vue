@@ -1,13 +1,23 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import Headers from "../components/header.vue";
-
+const Arr = ref([
+  { path: "/about", name: "第一个测试页" },
+  { path: "/MapZG", name: "简单的 vue3 中国地图" },
+  { path: "/AMAP", name: "高德地图示例" },
+  // { path: "/map", name: "打算做一个示例二级地图的", text: "这个还有一点 bug" },
+]);
 </script>
 
 <template>
   <!-- <Headers /> -->
-  <router-link to="/about" class="router-link"> 跳转到其他页面</router-link>
-  <router-link to="/map" class="router-link">地图界面</router-link>
+  <div v-for="(item, index) in Arr" :key="index">
+    <router-link :to="item.path" class="router-link">
+      <div>
+        {{ item.name }} <span v-if="item.text">{{ item.text }}</span>
+      </div>
+    </router-link>
+  </div>
 </template>
 
 <style scoped lang="less">

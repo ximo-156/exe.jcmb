@@ -12,6 +12,8 @@
     "electron:build": "vue-tsc && vite build --config vite.config.electron.ts && electron-builder"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "@types/node": "^20.6.0",
     "echarts": "^5.4.3",
     "less": "^4.2.0",
     "vue": "^3.2.47",
