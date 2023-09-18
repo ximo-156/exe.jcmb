@@ -351,10 +351,10 @@ function drawChina() {
 .index {
 
   .chinaMap {
-    height: 100vh;
-    border: solid 1px red;
+    height: 100%;
+    //border: solid 1px red;
     width: 100%;
-    //background: #010111;
+    background: #010111;
     background-size: 100% 100%;
     background-image: url("@/assets/bg.png");
 

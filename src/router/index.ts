@@ -4,6 +4,7 @@ import About from '../views/About.vue';
 import mapZG from '../views/mapZG.vue';
 import vue2 from "../views/vue2.vue";
 import Map from "../views/Map.vue"
+import OpenSourceChina from "../views/openSourceChina/index.vue"
 import AMAP from "../../src/views/AMAP/index.vue";
 const routes: Array<RouteRecordRaw> = [
     {
@@ -31,6 +32,11 @@ const routes: Array<RouteRecordRaw> = [
         path: "/Map",
         name: "vue2改造",
         component: Map
+    },
+    {
+        path: "/OpenSourceChina",
+        name: "开源中国",
+        component: OpenSourceChina
     },
     { path: '/about', component: About },
 ];

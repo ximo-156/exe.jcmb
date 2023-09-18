@@ -5,6 +5,10 @@ const Arr = ref([
   { path: "/about", name: "第一个测试页" },
   { path: "/MapZG", name: "简单的 vue3 中国地图" },
   { path: "/AMAP", name: "高德地图示例" },
+  {
+    path: "/OpenSourceChina",
+    name: "开源中国",
+  },
   // { path: "/map", name: "打算做一个示例二级地图的", text: "这个还有一点 bug" },
 ]);
 </script>
