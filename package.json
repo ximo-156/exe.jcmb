@@ -17,7 +17,7 @@
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
-    "electron": "^22.3.12",
+    "electron": "^22.3.25",
     "@vitejs/plugin-vue": "^4.1.0",
     "electron-builder": "^24.6.3",
     "typescript": "^5.0.2",
